@@ -1,0 +1,46 @@
+$feature-flags: (
+  ui-shell: true,
+  grid-columns-16: true,
+);
+
+@import '@carbon/type/scss/styles';
+@import '@carbon/themes/scss/themes';
+@import "carbon-components/scss/globals/scss/styles.scss";
+@import "carbon-components/scss/globals/grid/grid";
+
+$carbon--theme: $carbon--theme--g10;
+@include carbon--theme();
+
+.tile--text {
+    @include carbon--type-style('body-short-01');
+}
+
+.tile--value {
+    @include carbon--type-style('display-03');
+}
+
+.tile--subtext{
+    color: $text-05;
+}
+
+.dash--tile {
+    height: 120px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.section--height-small {
+    height: 250px;
+}
+
+.actions {
+    float: right;
+}
+
+.filterDrpDwn {
+    width: 18%;
+}
+
+#dashboard-filter{
+    height: 1.5rem;
+}

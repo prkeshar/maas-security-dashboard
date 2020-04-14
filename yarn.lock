@@ -945,6 +945,11 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
+"@carbon/colors@^10.9.0":
+  version "10.9.0"
+  resolved "https://registry.yarnpkg.com/@carbon/colors/-/colors-10.9.0.tgz#5aa9eb0826ad7f8610c35d30166859299100b2e2"
+  integrity sha512-XJKPTqqcrgssqsBF4tvgWX/9/3AuH33PYLTxz4A1rhhUcsYlojAGmZsuJ6/JKRMEUoSrtHJrbg/Z4owvPGHp7w==
+
 "@carbon/grid@^10.10.0":
   version "10.10.0"
   resolved "https://registry.yarnpkg.com/@carbon/grid/-/grid-10.10.0.tgz#71bc830e7941666040098045f5363d17d91624de"
@@ -965,6 +970,11 @@
   dependencies:
     "@carbon/icon-helpers" "^10.6.0"
 
+"@carbon/icons@^10.10.0":
+  version "10.10.0"
+  resolved "https://registry.yarnpkg.com/@carbon/icons/-/icons-10.10.0.tgz#cb4cfea01703123d50160c2fa8b50d745209ef81"
+  integrity sha512-ZQnFkVskl1eAr7GYIek7agugWXIWyNIvEqZkvUrAToSw+ayxIUCnxn7fTiardooACu161GU5Rxj519HVY22WqA==
+
 "@carbon/import-once@^10.3.0":
   version "10.3.0"
   resolved "https://registry.yarnpkg.com/@carbon/import-once/-/import-once-10.3.0.tgz#58617da4efb6d7a11352d8e6b7209da1d39f364d"
@@ -974,6 +984,24 @@
   version "10.9.0"
   resolved "https://registry.yarnpkg.com/@carbon/layout/-/layout-10.9.0.tgz#e7fe51850b9cfdbf9d330986ad0e779a877df49d"
   integrity sha512-TbLTYGqCciL2CaFPnnwKOKw7LzThx5YkabM4kaXNRZxF3l7LLmegGxWIejQeq7aeYgOZIeHX6DlpFXI/5YaTuw==
+
+"@carbon/themes@^10.11.0":
+  version "10.11.0"
+  resolved "https://registry.yarnpkg.com/@carbon/themes/-/themes-10.11.0.tgz#a4a71bd3f889ec4c27dc549416c11859fe4f7989"
+  integrity sha512-Wo7hlOsk9tmDWOg7IUbYqnHX+LKPnqXMdd2kkTzgeeRWD/AUXxFGT5a0DUw7JzyqYX8ThbSjsto0xJARv7NQMA==
+  dependencies:
+    "@carbon/colors" "^10.9.0"
+    "@carbon/layout" "^10.9.0"
+    "@carbon/type" "^10.10.0"
+    color "^3.1.2"
+
+"@carbon/type@^10.10.0":
+  version "10.10.0"
+  resolved "https://registry.yarnpkg.com/@carbon/type/-/type-10.10.0.tgz#95e3693010767669c59ab9f4520ecdb1cb8db1b6"
+  integrity sha512-bYP9CfS+JvRaL1cyE8Glo+I78C8Die8rsAii3DeOwTYA+weQWd38KJhjwlefz8UYU6VpvGhulYK8sQp8znvwTw==
+  dependencies:
+    "@carbon/import-once" "^10.3.0"
+    "@carbon/layout" "^10.9.0"
 
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
@@ -2975,7 +3003,7 @@ color-string@^1.5.2:
     color-name "^1.0.0"
     simple-swizzle "^0.2.2"
 
-color@^3.0.0:
+color@^3.0.0, color@^3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/color/-/color-3.1.2.tgz#68148e7f85d41ad7649c5fa8c8106f098d229e10"
   integrity sha512-vXTJhHebByxZn3lDvDJYw4lR5+uB3vuoHsuYA5AKuxRVn5wzzIfQKGLBmgdVRHKTJYeK5rvJcHnrd0Li49CFpg==
