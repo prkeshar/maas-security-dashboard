@@ -1,10 +1,10 @@
 import React from 'react';
 
-function ThreatIncidentsChart(){
+function PriorityUsersWatchlist(){
     return (
         <div class="widget-section section--height-small">
 
         </div>
     );
 }
-export default ThreatIncidentsChart;
+export default PriorityUsersWatchlist;

@@ -1,15 +1,16 @@
+@import '@carbon/themes/scss/themes';
+
 $feature-flags: (
   ui-shell: true,
   grid-columns-16: true,
 );
 
-@import '@carbon/type/scss/styles';
-@import '@carbon/themes/scss/themes';
-@import "carbon-components/scss/globals/scss/styles.scss";
-@import "carbon-components/scss/globals/grid/grid";
-
 $carbon--theme: $carbon--theme--g10;
 @include carbon--theme();
+
+@import '@carbon/type/scss/styles';
+@import "carbon-components/scss/globals/scss/styles.scss";
+@import "carbon-components/scss/globals/grid/grid";
 
 .tile--text {
     @include carbon--type-style('body-short-01');
@@ -30,7 +31,11 @@ $carbon--theme: $carbon--theme--g10;
 }
 
 .section--height-small {
-    height: 250px;
+    height: 300px;
+}
+
+.section--height-large{
+    height: 600px;
 }
 
 .actions {
@@ -41,6 +46,27 @@ $carbon--theme: $carbon--theme--g10;
     width: 18%;
 }
 
-#dashboard-filter{
-    height: 1.5rem;
+.whiteBackground {
+    background-color: white;
+}
+
+.bx--row-margin{
+    margin-bottom: 1px;
+}
+
+.bx--col-margin{
+    margin-right: 1px;
+}
+
+.widget-section {
+    background-color: white;
+}
+
+.col-only-right-padding {
+    padding-left: 0;
+    padding-right: 1px;
+}
+
+.no-padding {
+    padding: 0;
 }

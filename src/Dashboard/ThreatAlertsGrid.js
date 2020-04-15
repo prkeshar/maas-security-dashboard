@@ -2,7 +2,7 @@ import React from 'react';
 
 function ThreatAlertsGrid(){
     return (
-        <div class="section--height-small">
+        <div class="widget-section section--height-small">
 
         </div>
     );

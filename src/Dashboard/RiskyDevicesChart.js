@@ -1,10 +1,10 @@
 import React from 'react';
 
-function ThreatIncidentsChart(){
+function RiskyDevicesChart(){
     return (
         <div class="widget-section section--height-small">
 
         </div>
     );
 }
-export default ThreatIncidentsChart;
+export default RiskyDevicesChart;
