@@ -4,7 +4,7 @@ import DashboardActions from './DashboardActions'
 import InfoTiles from './InfoTiles'
 import ThreatAlertsGrid from './ThreatAlertsGrid'
 import ThreatIncidentsChart from './ThreatIncidentsChart'
-import DashboardHeader from './DashboardHeader'
+import DashboardBanner from './DashboardBanner'
 import DashboardFilter from './DashboardFilter'
 import RiskScoreTrendChart from './RiskScoreTrendChart'
 import RiskyDevicesChart from './RiskyDevicesChart'
@@ -17,9 +17,9 @@ import SecurityInsights from './SecurityInsights'
 class SecurityDashboard extends Component {
     render() {
         return (
-            <div class="bx--grid">
+            <div class="bx--grid bx--grid--full-width landing-page">
                 
-                <DashboardHeader />
+                <DashboardBanner />
                 
                 <div class="bx--row bx--row-margin whiteBackground">
                     <div class="bx--col-lg-12 bx--col-md-5 bx--col-sm-2 bx--col-no-gutter">
