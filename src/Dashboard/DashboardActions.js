@@ -4,7 +4,7 @@ import { Renew16, Download16, Edit16, OverflowMenuVertical16 } from '@carbon/ico
 class DashboardActions extends Component {
     render() {
         return (
-            <div class="actions">
+            <div class="over-flow--right">
                 <button class="bx--btn bx--btn--ghost">
                     <Renew16 />         
                 </button>

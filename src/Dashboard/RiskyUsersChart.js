@@ -24,14 +24,13 @@ class RiskyUsersChart extends Component{
         }
 		],
 		options: {
-
+            "title": "Risky Users",
 			"resizable": true,
 			"donut": {
 				"center": {
 					"label": "Risky Users"
 					}
-			},
-			"height": "300px"
+			}
 		}	
     };
     

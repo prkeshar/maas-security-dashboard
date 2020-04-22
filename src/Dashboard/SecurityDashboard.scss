@@ -38,7 +38,7 @@ $carbon--theme: $carbon--theme--g10;
     height: 600px;
 }
 
-.actions {
+.over-flow--right {
     float: right;
 }
 
@@ -60,6 +60,7 @@ $carbon--theme: $carbon--theme--g10;
 
 .widget-section {
     background-color: white;
+    padding: 1rem;
 }
 
 .col-only-right-padding {
@@ -75,3 +76,12 @@ $carbon--theme: $carbon--theme--g10;
     padding-top: $spacing-05;
     padding-bottom: $spacing-05;
   }
+
+.tile--heading-left {
+    @include carbon--type-style('productive-heading-02');
+    padding-top: 5px;
+}
+
+.no-padding-right {
+    padding-right: 2px;
+}
