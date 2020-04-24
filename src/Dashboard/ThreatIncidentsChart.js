@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import TileHeader from './TileHeader'
 import { LineChart } from "@carbon/charts-react";
-import { Dropdown } from 'carbon-components-react';
+import { Dropdown, DatePicker, DatePickerInput } from 'carbon-components-react';
 import "@carbon/charts/styles.css";
 //import ThreatIncidentsFilter from './ThreatIncidentsFilter'
 
@@ -83,7 +83,7 @@ class ThreatIncidentsChart extends Component{
             "scaleType": "linear"
           }
         },
-        "height" : "245px"
+        "height" : "200px"
       }
 
     constructor(props) {
@@ -102,7 +102,7 @@ class ThreatIncidentsChart extends Component{
       } else {
         arr = this.d.filter(d => d.group === e.selectedItem);
       }
-      
+
       console.log(arr);
 
       this.setState({
@@ -118,8 +118,8 @@ class ThreatIncidentsChart extends Component{
                   <div class="bx--grid">
                       <TileHeader headingtext="Number of threat incidents"/>
                       <div class="bx--row">
-                        <div class="bx--col-lg-2 bx--col-md-1 bx--col-sm-1">View</div>
-                        <div class="bx--col-lg-6 bx--col-md-3 bx--col-sm-1">
+                        <div class="bx--col">View</div>
+                        <div class="bx--col">
                           <Dropdown
                               light
                               inline
@@ -129,6 +129,22 @@ class ThreatIncidentsChart extends Component{
                               items={viewFilter}
                               label="All incidents"
                               /> 
+                        </div>
+                        <div class="bx--col">
+                        <DatePicker dateFormat="m/d/Y" datePickerType="range">
+                          <DatePickerInput
+                            id="date-picker-range-start"
+                            placeholder="mm/dd/yyyy"
+                            labelText="Date Picker label"
+                            type="text"
+                          />
+                          <DatePickerInput
+                            id="date-picker-range-end"
+                            placeholder="mm/dd/yyyy"
+                            labelText="Date Picker label"
+                            type="text"
+                          />
+                        </DatePicker>
                         </div>
                       </div>
                       <div class="bx--row">
